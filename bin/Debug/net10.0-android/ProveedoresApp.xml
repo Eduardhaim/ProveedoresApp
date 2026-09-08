@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ProveedoresApp</name>
+    </assembly>
+    <members>
+        <member name="T:ProveedoresApp.ViewModels.ProveedorViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:ProveedoresApp.ViewModels.ProveedorViewModel.Id">
+            <inheritdoc cref="F:ProveedoresApp.ViewModels.ProveedorViewModel.id"/>
+        </member>
+        <member name="P:ProveedoresApp.ViewModels.ProveedorViewModel.Nombre">
+            <inheritdoc cref="F:ProveedoresApp.ViewModels.ProveedorViewModel.nombre"/>
+        </member>
+        <member name="P:ProveedoresApp.ViewModels.ProveedorViewModel.Empresa">
+            <inheritdoc cref="F:ProveedoresApp.ViewModels.ProveedorViewModel.empresa"/>
+        </member>
+        <member name="P:ProveedoresApp.ViewModels.ProveedorViewModel.Telefono">
+            <inheritdoc cref="F:ProveedoresApp.ViewModels.ProveedorViewModel.telefono"/>
+        </member>
+        <member name="P:ProveedoresApp.ViewModels.ProveedorViewModel.Correo">
+            <inheritdoc cref="F:ProveedoresApp.ViewModels.ProveedorViewModel.correo"/>
+        </member>
+        <member name="P:ProveedoresApp.ViewModels.ProveedorViewModel.Direccion">
+            <inheritdoc cref="F:ProveedoresApp.ViewModels.ProveedorViewModel.direccion"/>
+        </member>
+        <member name="P:ProveedoresApp.ViewModels.ProveedorViewModel.Rtn">
+            <inheritdoc cref="F:ProveedoresApp.ViewModels.ProveedorViewModel.rtn"/>
+        </member>
+        <member name="P:ProveedoresApp.ViewModels.ProveedorViewModel.Mensaje">
+            <inheritdoc cref="F:ProveedoresApp.ViewModels.ProveedorViewModel.mensaje"/>
+        </member>
+        <member name="P:ProveedoresApp.ViewModels.ProveedorViewModel.TituloFormulario">
+            <inheritdoc cref="F:ProveedoresApp.ViewModels.ProveedorViewModel.tituloFormulario"/>
+        </member>
+        <member name="F:ProveedoresApp.ViewModels.ProveedorViewModel.cargarProveedoresCommand">
+            <summary>The backing field for <see cref="P:ProveedoresApp.ViewModels.ProveedorViewModel.CargarProveedoresCommand"/>.</summary>
+        </member>
+        <member name="P:ProveedoresApp.ViewModels.ProveedorViewModel.CargarProveedoresCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:ProveedoresApp.ViewModels.ProveedorViewModel.CargarProveedoresAsync"/>.</summary>
+        </member>
+        <member name="F:ProveedoresApp.ViewModels.ProveedorViewModel.guardarCommand">
+            <summary>The backing field for <see cref="P:ProveedoresApp.ViewModels.ProveedorViewModel.GuardarCommand"/>.</summary>
+        </member>
+        <member name="P:ProveedoresApp.ViewModels.ProveedorViewModel.GuardarCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:ProveedoresApp.ViewModels.ProveedorViewModel.GuardarAsync"/>.</summary>
+        </member>
+        <member name="F:ProveedoresApp.ViewModels.ProveedorViewModel.editarCommand">
+            <summary>The backing field for <see cref="P:ProveedoresApp.ViewModels.ProveedorViewModel.EditarCommand"/>.</summary>
+        </member>
+        <member name="P:ProveedoresApp.ViewModels.ProveedorViewModel.EditarCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:ProveedoresApp.ViewModels.ProveedorViewModel.Editar(ProveedoresApp.Models.Proveedor)"/>.</summary>
+        </member>
+        <member name="F:ProveedoresApp.ViewModels.ProveedorViewModel.eliminarCommand">
+            <summary>The backing field for <see cref="P:ProveedoresApp.ViewModels.ProveedorViewModel.EliminarCommand"/>.</summary>
+        </member>
+        <member name="P:ProveedoresApp.ViewModels.ProveedorViewModel.EliminarCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:ProveedoresApp.ViewModels.ProveedorViewModel.EliminarAsync(ProveedoresApp.Models.Proveedor)"/>.</summary>
+        </member>
+        <member name="F:ProveedoresApp.ViewModels.ProveedorViewModel.nuevoCommand">
+            <summary>The backing field for <see cref="P:ProveedoresApp.ViewModels.ProveedorViewModel.NuevoCommand"/>.</summary>
+        </member>
+        <member name="P:ProveedoresApp.ViewModels.ProveedorViewModel.NuevoCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:ProveedoresApp.ViewModels.ProveedorViewModel.Nuevo"/>.</summary>
+        </member>
+        <member name="T:ProveedoresApp.Resource">
+            <summary>
+            Android Resource Designer class.
+            Exposes the Android Resource designer assembly into the project Namespace.
+            </summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Id">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Id" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Nombre">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Nombre" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Empresa">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Empresa" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Telefono">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Telefono" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Correo">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Correo" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Direccion">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Direccion" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Rtn">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Rtn" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Mensaje">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Mensaje" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.TituloFormulario">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "TituloFormulario" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Id">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Id" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Nombre">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Nombre" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Empresa">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Empresa" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Telefono">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Telefono" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Correo">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Correo" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Direccion">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Direccion" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Rtn">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Rtn" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Mensaje">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Mensaje" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.TituloFormulario">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "TituloFormulario" generated properties.</summary>
+        </member>
+    </members>
+</doc>

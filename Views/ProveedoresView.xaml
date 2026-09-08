@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    x:Class="ProveedoresApp.Views.ProveedoresView"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Name="PaginaProveedores"
+    Title="Proveedores"
+    BackgroundColor="#F3F4F6">
+
+    <Grid
+        Padding="20"
+        RowDefinitions="Auto,*"
+        RowSpacing="20"
+        MaximumWidthRequest="850"
+        HorizontalOptions="Center">
+
+        <!-- FORMULARIO -->
+        <ScrollView Grid.Row="0">
+
+            <VerticalStackLayout Spacing="12">
+
+                <Label
+                    Text="Gestión de Proveedores"
+                    FontSize="30"
+                    FontAttributes="Bold"
+                    HorizontalTextAlignment="Center"
+                    TextColor="#111827" />
+
+                <Label
+                    Text="Registra y administra tus proveedores"
+                    FontSize="15"
+                    HorizontalTextAlignment="Center"
+                    TextColor="#6B7280"
+                    Margin="0,0,0,10" />
+
+                <Border
+                    BackgroundColor="White"
+                    Stroke="#D1D5DB"
+                    StrokeThickness="1"
+                    Padding="20">
+
+                    <VerticalStackLayout Spacing="10">
+
+                        <Label
+                            Text="{Binding TituloFormulario}"
+                            FontSize="22"
+                            FontAttributes="Bold"
+                            TextColor="#111827" />
+
+                        <!-- NOMBRE -->
+                        <Label
+                            Text="Nombre"
+                            FontAttributes="Bold"
+                            TextColor="#374151" />
+
+                        <Entry
+                            Text="{Binding Nombre}"
+                            Placeholder="Nombre del proveedor"
+                            PlaceholderColor="#9CA3AF"
+                            TextColor="#111827"
+                            BackgroundColor="#F9FAFB" />
+
+                        <!-- EMPRESA -->
+                        <Label
+                            Text="Empresa"
+                            FontAttributes="Bold"
+                            TextColor="#374151" />
+
+                        <Entry
+                            Text="{Binding Empresa}"
+                            Placeholder="Nombre de la empresa"
+                            PlaceholderColor="#9CA3AF"
+                            TextColor="#111827"
+                            BackgroundColor="#F9FAFB" />
+
+                        <!-- TELEFONO -->
+                        <Label
+                            Text="Teléfono"
+                            FontAttributes="Bold"
+                            TextColor="#374151" />
+
+                        <Entry
+                            Text="{Binding Telefono}"
+                            Placeholder="Ejemplo: 9999-9999"
+                            Keyboard="Telephone"
+                            PlaceholderColor="#9CA3AF"
+                            TextColor="#111827"
+                            BackgroundColor="#F9FAFB" />
+
+                        <!-- CORREO -->
+                        <Label
+                            Text="Correo"
+                            FontAttributes="Bold"
+                            TextColor="#374151" />
+
+                        <Entry
+                            Text="{Binding Correo}"
+                            Placeholder="correo@empresa.com"
+                            Keyboard="Email"
+                            PlaceholderColor="#9CA3AF"
+                            TextColor="#111827"
+                            BackgroundColor="#F9FAFB" />
+
+                        <!-- DIRECCION -->
+                        <Label
+                            Text="Dirección"
+                            FontAttributes="Bold"
+                            TextColor="#374151" />
+
+                        <Entry
+                            Text="{Binding Direccion}"
+                            Placeholder="Dirección del proveedor"
+                            PlaceholderColor="#9CA3AF"
+                            TextColor="#111827"
+                            BackgroundColor="#F9FAFB" />
+
+                        <!-- RTN -->
+                        <Label
+                            Text="RTN"
+                            FontAttributes="Bold"
+                            TextColor="#374151" />
+
+                        <Entry
+                            Text="{Binding Rtn}"
+                            Placeholder="RTN del proveedor"
+                            Keyboard="Numeric"
+                            PlaceholderColor="#9CA3AF"
+                            TextColor="#111827"
+                            BackgroundColor="#F9FAFB" />
+
+                        <!-- BOTONES -->
+                        <Grid
+                            ColumnDefinitions="*,*"
+                            ColumnSpacing="10"
+                            Margin="0,10,0,0">
+
+                            <Button
+                                Grid.Column="0"
+                                Text="GUARDAR"
+                                Command="{Binding GuardarCommand}"
+                                BackgroundColor="#2563EB"
+                                TextColor="White"
+                                FontAttributes="Bold"
+                                HeightRequest="50"
+                                CornerRadius="10" />
+
+                            <Button
+                                Grid.Column="1"
+                                Text="NUEVO"
+                                Command="{Binding NuevoCommand}"
+                                BackgroundColor="#6B7280"
+                                TextColor="White"
+                                FontAttributes="Bold"
+                                HeightRequest="50"
+                                CornerRadius="10" />
+
+                        </Grid>
+
+                        <Label
+                            Text="{Binding Mensaje}"
+                            FontAttributes="Bold"
+                            HorizontalTextAlignment="Center"
+                            TextColor="#2563EB"
+                            Margin="0,5,0,0" />
+
+                    </VerticalStackLayout>
+
+                </Border>
+
+            </VerticalStackLayout>
+
+        </ScrollView>
+
+
+        <!-- LISTA DE PROVEEDORES -->
+        <VerticalStackLayout
+            Grid.Row="1"
+            Spacing="10">
+
+            <Label
+                Text="Lista de Proveedores"
+                FontSize="22"
+                FontAttributes="Bold"
+                TextColor="#111827" />
+
+            <CollectionView
+                ItemsSource="{Binding Proveedores}"
+                EmptyView="No hay proveedores registrados.">
+
+                <CollectionView.ItemTemplate>
+
+                    <DataTemplate>
+
+                        <Border
+                            BackgroundColor="White"
+                            Stroke="#D1D5DB"
+                            StrokeThickness="1"
+                            Padding="15"
+                            Margin="0,5">
+
+                            <VerticalStackLayout Spacing="5">
+
+                                <Label
+                                    Text="{Binding Nombre}"
+                                    FontSize="20"
+                                    FontAttributes="Bold"
+                                    TextColor="#111827" />
+
+                                <Label
+                                    Text="{Binding Empresa}"
+                                    FontSize="16"
+                                    FontAttributes="Bold"
+                                    TextColor="#374151" />
+
+                                <Label
+                                    Text="{Binding Telefono, StringFormat='Teléfono: {0}'}"
+                                    TextColor="#4B5563" />
+
+                                <Label
+                                    Text="{Binding Correo, StringFormat='Correo: {0}'}"
+                                    TextColor="#4B5563" />
+
+                                <Label
+                                    Text="{Binding Direccion, StringFormat='Dirección: {0}'}"
+                                    TextColor="#4B5563" />
+
+                                <Label
+                                    Text="{Binding Rtn, StringFormat='RTN: {0}'}"
+                                    TextColor="#4B5563" />
+
+                                <Grid
+                                    ColumnDefinitions="*,*"
+                                    ColumnSpacing="10"
+                                    Margin="0,8,0,0">
+
+                                    <Button
+                                        Grid.Column="0"
+                                        Text="EDITAR"
+                                        Command="{Binding Source={x:Reference PaginaProveedores}, Path=BindingContext.EditarCommand}"
+                                        CommandParameter="{Binding .}"
+                                        BackgroundColor="#F59E0B"
+                                        TextColor="White"
+                                        FontAttributes="Bold"
+                                        CornerRadius="8" />
+
+                                    <Button
+                                        Grid.Column="1"
+                                        Text="ELIMINAR"
+                                        Command="{Binding Source={x:Reference PaginaProveedores}, Path=BindingContext.EliminarCommand}"
+                                        CommandParameter="{Binding .}"
+                                        BackgroundColor="#DC2626"
+                                        TextColor="White"
+                                        FontAttributes="Bold"
+                                        CornerRadius="8" />
+
+                                </Grid>
+
+                            </VerticalStackLayout>
+
+                        </Border>
+
+                    </DataTemplate>
+
+                </CollectionView.ItemTemplate>
+
+            </CollectionView>
+
+        </VerticalStackLayout>
+
+    </Grid>
+
+</ContentPage>
